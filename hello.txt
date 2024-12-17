@@ -210,3 +210,4 @@ git reset --soft  乱码 (HEAD^上一个版本)  只回退到指定的提交历�
 git reset --mixed 乱码                    回退到指定提交历史，暂存区清空
 git reset --hard  乱码                    回退到指定提交，用指定提交覆盖暂存区和本地工作目录
 git reflog        得到万能乱码
+
