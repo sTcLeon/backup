@@ -198,9 +198,14 @@ git config --global user.name "Name"
 git config --global user.email "Email"
 git init repo               创建一个新的本地代码仓库
 echo xxx > file.txt         创建一个任意文件
+
+
 git add file.txt            加载file这个文件到暂存区
 git add .                   加载所有文件到暂存区
-git commit -m "随便说点啥"  将暂存区提交到本地仓库
+git commit -m "随便说点啥"  将暂存区提交到本地仓库 带注释
+git commit -a               加载到暂存区并提交
+git commit -am "随便说点啥" 加载到暂存区并提交 带注释
+
 git status                  仓库状态
 git log                     提交历史
         --oneline           简洁显示
@@ -227,3 +232,8 @@ git diff HEAD~ HEAD file.txt   单个文件和上一个版本作比较
 git rm file.txt                   删本地+暂存区
 git commit -m "删除file"  提交删除至仓库 
  
+忽略
+echo file.log > .gitignore   忽略file.log这个文件
+echo *.log >> .gitignore     忽略所以log格式文件
+echo temp/ >> .gitignore     忽略文件夹
+
