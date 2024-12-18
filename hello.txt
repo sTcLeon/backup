@@ -220,3 +220,10 @@ git diff HEAD^ HEAD    和上一个版本作比较
 git diff 乱码1 乱码2
 git diff 乱码1 HEAD
 git diff HEAD~ HEAD file.txt   单个文件和上一个版本作比较
+
+删除
+(rm file.txt    先删本地
+ git add .      提交删除只暂存区)
+git rm file.txt                   删本地+暂存区
+git commit -m "删除file"  提交删除至仓库 
+ 
