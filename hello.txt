@@ -265,3 +265,10 @@ git remote add origin git@github.com:sTcLeon/another_repo.git
 git branch -M main
 git push -u origin main:main
 
+分支
+git checkout -b 分支名
+git add .
+git commit -m "xxx"
+git checkout master/main
+git merge 分支名
+
