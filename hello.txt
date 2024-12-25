@@ -272,3 +272,31 @@ git commit -m "xxx"
 git checkout master/main
 git merge 分支名
 
+                                 python
+ERROR:
+try:
+except:
+else:
+先试try,如果报了except里面的错，就结束，如果没报错就执行else
+
+ValueError: 要int没给int
+
+第三方库：
+                              Random
+基本随机数生成：
+    random.random()：生成 [0.0, 1.0) 范围内的随机浮点数。
+    random.uniform(a, b)：生成 [a, b] 范围内的随机浮点数。
+    random.randint(a, b)：生成 [a, b] 范围内的随机整数（包括 a 和 b）。
+    random.randrange(start, stop[, step])：从指定范围内按步长生成随机整数。
+随机选择：
+    random.choice(sequence)：从序列中随机选择一个元素。
+    random.choices(sequence, weights=None, k=1)：随机选择 k 个元素（可重复），可设置权重。
+    random.sample(population, k)：随机选择 k 个元素（不重复）。
+随机打乱：
+    random.shuffle(sequence)：原地打乱列表顺序。
+分布函数：
+    random.gauss(mu, sigma)：生成高斯分布（正态分布）的随机数。
+    random.expovariate(lambd)：生成指数分布的随机数。
+    random.betavariate(alpha, beta)：生成 Beta 分布的随机数。
+设置随机种子：
+    random.seed(a=None)：设置随机种子，保证随机数生成的可重复性。
