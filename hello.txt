@@ -300,3 +300,24 @@ ValueError: 要int没给int
     random.betavariate(alpha, beta)：生成 Beta 分布的随机数。
 设置随机种子：
     random.seed(a=None)：设置随机种子，保证随机数生成的可重复性。
+
+                          statistic
+平均值：
+    statistics.mean(data)：计算数据的算术平均值。
+    statistics.fmean(data)：计算浮点数的快速平均值，性能更高（Python 3.8+）。
+中位数：
+    statistics.median(data)：返回数据的中位数，即排序后的中间值。
+    statistics.median_low(data)：返回排序数据中较小的中位数。
+    statistics.median_high(data)：返回排序数据中较大的中位数。
+众数：
+    statistics.mode(data)：返回数据中出现次数最多的值。如果没有唯一的众数会报错
+    statistics.multimode(data)：返回所有众数的列表。
+方差和标准差：
+    statistics.variance(data)：计算样本方差。
+    statistics.pvariance(data)：计算总体方差。
+    statistics.stdev(data)：计算样本标准差。
+    statistics.pstdev(data)：计算总体标准差。
+使用注意事项：
+    数据必须是数值类型，非数值类型会导致错误。
+    空数据或不符合条件的数据会引发 StatisticsError。
+    mode 在没有唯一众数时可能报错，推荐使用 multimode。
